@@ -3,7 +3,7 @@
 //  3D Touch
 //
 //  Created by IsLand on 15/10/9.
-//  Copyright © 2015年 tmall. All rights reserved.
+//  Copyright © 2015年 IsLand. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -18,28 +18,28 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+    
+    /*
+     当程序启动时
+     
+     1、判断launchOptions字典内的UIApplicationLaunchOptionsShortcutItemKey是否为空
+     2、当不为空时,application:didFinishLaunchWithOptions方法返回NO，否则返回YES
+     3、在application:performActionForShortcutItem:completionHandler方法内处理点击事件
+     */
+    
     [self creatUIApplicationShortcutItems];
-    
-    UIApplicationShortcutItem *item = [launchOptions valueForKey:UIApplicationLaunchOptionsShortcutItemKey];
-    __weak typeof(self) weakSelf = self;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        __strong typeof(weakSelf) strongSelf = weakSelf;
-        if (strongSelf)
-        {
-            [strongSelf actionWithShortcutItem:item];
-        }
-    });
-    
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
-    
-    _vc = [[ViewController alloc] initWithNibName:nil bundle:nil];
-    self.window.rootViewController = _vc;
-    [self.window makeKeyAndVisible];
-    
-    
-    return YES;
+
+    if (launchOptions[@"UIApplicationLaunchOptionsShortcutItemKey"] == nil) {
+        
+        return YES;
+        
+    } else {
+        
+        return NO;
+    }
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -64,46 +64,42 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void(^)(BOOL succeeded))completionHandler
-{
-    if (shortcutItem)
-    {
-        [self actionWithShortcutItem:shortcutItem];
-    }
+/** 处理shortcutItem */
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
     
-    if (completionHandler)
+    if ([shortcutItem.type isEqualToString:@"first"])
     {
-        completionHandler(YES);
+       
+        NSLog(@"doSomeThing");
+        
+    }else if ([shortcutItem.type isEqualToString:@"second"]) {
+    
+        NSLog(@"doSomething");
+    
     }
 }
-
 
 -(void)creatUIApplicationShortcutItems
 {
-    //创建快捷item的icon 即UIApplicationShortcutItemIconFile
-    UIApplicationShortcutIcon *icon1 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"money"];
+    UIApplicationShortcutIcon *icon1 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"gouwuche"];
+    
     UIApplicationShortcutIcon *icon2 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"gouwuche"];
-    UIApplicationShortcutIcon *icon3 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"wode"];
+    
     
     //创建快捷item的userinfo 即UIApplicationShortcutItemUserInfo
+   
     NSDictionary *info1 = @{@"url":@"money"};
-    NSDictionary *info2 = @{@"url":@"gouWuche"};
-    NSDictionary *info3 = @{@"url":@"wode"};
     
     //创建ShortcutItem
-    UIMutableApplicationShortcutItem *item1 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"3dtouch.moneyPage" localizedTitle:@"资产" localizedSubtitle:@"这是资产" icon:icon1 userInfo:info1];
-    UIMutableApplicationShortcutItem *item2 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"3dtouch.shopPage" localizedTitle:@"购物车" localizedSubtitle:@"这是购物车" icon:icon2 userInfo:info2];
-    UIMutableApplicationShortcutItem *item3 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"3dtouch.mypage" localizedTitle:@"我的" localizedSubtitle:@"这是我的" icon:icon3 userInfo:info3];
+    UIMutableApplicationShortcutItem *item1 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"first" localizedTitle:@"大标题" localizedSubtitle:@"小标题" icon:icon1 userInfo:info1];
     
-    //把原有的shortcutItems拿出来，把动态的放进去
-    NSArray *items = @[item1, item2, item3];
-    NSArray *existingItems = [UIApplication sharedApplication].shortcutItems;
-    NSArray *updatedItems = [existingItems arrayByAddingObjectsFromArray:items];
+    UIMutableApplicationShortcutItem *item2 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"second" localizedTitle:@"大标题" localizedSubtitle:@"小标题" icon:icon2 userInfo:info1];
     
-    //塞回去
-    [UIApplication sharedApplication].shortcutItems = updatedItems;
+    NSArray *items = @[item1,item2];
+    
+    [UIApplication sharedApplication].shortcutItems = items;
+    
 }
-
 -(void)actionWithShortcutItem:(UIApplicationShortcutItem *)item
 {
     if (item.userInfo)

@@ -7,21 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D9C5D8241BCB60AF0046DD66 /* 3D_UITouch.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C5D8231BCB60AF0046DD66 /* 3D_UITouch.m */; settings = {ASSET_TAGS = (); }; };
-		D9C5D8261BCBA8C20046DD66 /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C5D8251BCBA8C20046DD66 /* img.png */; settings = {ASSET_TAGS = (); }; };
-		D9C5D8291BCBB7B90046DD66 /* PeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C5D8281BCBB7B90046DD66 /* PeekViewController.m */; settings = {ASSET_TAGS = (); }; };
-		D9C5D82C1BCBB7D80046DD66 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C5D82B1BCBB7D80046DD66 /* PopViewController.m */; settings = {ASSET_TAGS = (); }; };
 		D9F26E751BC79CD5003DFC34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F26E741BC79CD5003DFC34 /* main.m */; };
 		D9F26E781BC79CD5003DFC34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F26E771BC79CD5003DFC34 /* AppDelegate.m */; };
 		D9F26E7B1BC79CD5003DFC34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F26E7A1BC79CD5003DFC34 /* ViewController.m */; };
 		D9F26E801BC79CD5003DFC34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F26E7F1BC79CD5003DFC34 /* Assets.xcassets */; };
 		D9F26E8E1BC79CD5003DFC34 /* _D_TouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F26E8D1BC79CD5003DFC34 /* _D_TouchTests.m */; };
 		D9F26E991BC79CD5003DFC34 /* _D_TouchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F26E981BC79CD5003DFC34 /* _D_TouchUITests.m */; };
-		D9F26EAC1BC79E3C003DFC34 /* gouwuche.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F26EA71BC79E3C003DFC34 /* gouwuche.png */; settings = {ASSET_TAGS = (); }; };
-		D9F26EAD1BC79E3C003DFC34 /* guanzhu.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F26EA81BC79E3C003DFC34 /* guanzhu.png */; settings = {ASSET_TAGS = (); }; };
-		D9F26EAE1BC79E3C003DFC34 /* money.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F26EA91BC79E3C003DFC34 /* money.png */; settings = {ASSET_TAGS = (); }; };
-		D9F26EAF1BC79E3C003DFC34 /* shouye.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F26EAA1BC79E3C003DFC34 /* shouye.png */; settings = {ASSET_TAGS = (); }; };
-		D9F26EB01BC79E3C003DFC34 /* wode.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F26EAB1BC79E3C003DFC34 /* wode.png */; settings = {ASSET_TAGS = (); }; };
+		D9F26EAC1BC79E3C003DFC34 /* gouwuche.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F26EA71BC79E3C003DFC34 /* gouwuche.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D9C5D8221BCB60AF0046DD66 /* 3D_UITouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 3D_UITouch.h; sourceTree = "<group>"; };
-		D9C5D8231BCB60AF0046DD66 /* 3D_UITouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 3D_UITouch.m; sourceTree = "<group>"; };
-		D9C5D8251BCBA8C20046DD66 /* img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img.png; sourceTree = "<group>"; };
-		D9C5D8271BCBB7B90046DD66 /* PeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeekViewController.h; sourceTree = "<group>"; };
-		D9C5D8281BCBB7B90046DD66 /* PeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeekViewController.m; sourceTree = "<group>"; };
-		D9C5D82A1BCBB7D80046DD66 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
-		D9C5D82B1BCBB7D80046DD66 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
 		D9F26E701BC79CD5003DFC34 /* 3D Touch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3D Touch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F26E741BC79CD5003DFC34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9F26E761BC79CD5003DFC34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,10 +49,6 @@
 		D9F26E981BC79CD5003DFC34 /* _D_TouchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _D_TouchUITests.m; sourceTree = "<group>"; };
 		D9F26E9A1BC79CD5003DFC34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9F26EA71BC79E3C003DFC34 /* gouwuche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gouwuche.png; sourceTree = "<group>"; };
-		D9F26EA81BC79E3C003DFC34 /* guanzhu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guanzhu.png; sourceTree = "<group>"; };
-		D9F26EA91BC79E3C003DFC34 /* money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money.png; sourceTree = "<group>"; };
-		D9F26EAA1BC79E3C003DFC34 /* shouye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shouye.png; sourceTree = "<group>"; };
-		D9F26EAB1BC79E3C003DFC34 /* wode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wode.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,12 +104,6 @@
 				D9F26E771BC79CD5003DFC34 /* AppDelegate.m */,
 				D9F26E791BC79CD5003DFC34 /* ViewController.h */,
 				D9F26E7A1BC79CD5003DFC34 /* ViewController.m */,
-				D9C5D8271BCBB7B90046DD66 /* PeekViewController.h */,
-				D9C5D8281BCBB7B90046DD66 /* PeekViewController.m */,
-				D9C5D82A1BCBB7D80046DD66 /* PopViewController.h */,
-				D9C5D82B1BCBB7D80046DD66 /* PopViewController.m */,
-				D9C5D8221BCB60AF0046DD66 /* 3D_UITouch.h */,
-				D9C5D8231BCB60AF0046DD66 /* 3D_UITouch.m */,
 				D9F26E7F1BC79CD5003DFC34 /* Assets.xcassets */,
 				D9F26E841BC79CD5003DFC34 /* Info.plist */,
 				D9F26E731BC79CD5003DFC34 /* Supporting Files */,
@@ -166,11 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				D9F26EA71BC79E3C003DFC34 /* gouwuche.png */,
-				D9F26EA81BC79E3C003DFC34 /* guanzhu.png */,
-				D9F26EA91BC79E3C003DFC34 /* money.png */,
-				D9F26EAA1BC79E3C003DFC34 /* shouye.png */,
-				D9F26EAB1BC79E3C003DFC34 /* wode.png */,
-				D9C5D8251BCBA8C20046DD66 /* img.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -282,12 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9F26E801BC79CD5003DFC34 /* Assets.xcassets in Resources */,
-				D9F26EB01BC79E3C003DFC34 /* wode.png in Resources */,
-				D9F26EAE1BC79E3C003DFC34 /* money.png in Resources */,
-				D9F26EAF1BC79E3C003DFC34 /* shouye.png in Resources */,
-				D9F26EAD1BC79E3C003DFC34 /* guanzhu.png in Resources */,
 				D9F26EAC1BC79E3C003DFC34 /* gouwuche.png in Resources */,
-				D9C5D8261BCBA8C20046DD66 /* img.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,11 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9C5D82C1BCBB7D80046DD66 /* PopViewController.m in Sources */,
 				D9F26E7B1BC79CD5003DFC34 /* ViewController.m in Sources */,
 				D9F26E781BC79CD5003DFC34 /* AppDelegate.m in Sources */,
-				D9C5D8291BCBB7B90046DD66 /* PeekViewController.m in Sources */,
-				D9C5D8241BCB60AF0046DD66 /* 3D_UITouch.m in Sources */,
 				D9F26E751BC79CD5003DFC34 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

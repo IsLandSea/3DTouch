@@ -3,7 +3,7 @@
 //  3D TouchTests
 //
 //  Created by IsLand on 15/10/9.
-//  Copyright © 2015年 tmall. All rights reserved.
+//  Copyright © 2015年 IsLand. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
